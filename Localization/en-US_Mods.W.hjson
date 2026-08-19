@@ -1,0 +1,6 @@
+Items: {
+	KUVANUKOR: {
+		Tooltip: Fires A nuclear beam that channels through enemies
+		DisplayName: Kuva Nukor
+	}
+}
