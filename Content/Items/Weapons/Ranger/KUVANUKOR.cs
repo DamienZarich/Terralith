@@ -13,6 +13,7 @@ namespace W.Content.Items.Weapons.Ranger
             Item.useTime = 2;
             Item.useAnimation = 2;
             Item.autoReuse = true;
+            Item.channel = true;
             Item.noMelee = true;
             Item.Size = new Vector2(102, 66);
             Item.DamageType = DamageClass.Ranged;
@@ -21,7 +22,7 @@ namespace W.Content.Items.Weapons.Ranger
             Item.material = true;
             Item.ArmorPenetration = 100;
 
-            Item.shoot = ProjectileID.HeatRay;
+            Item.shoot = ModContent.ProjectileType<Lazr>();
             Item.UseSound = SoundID.Item12 with { Pitch = 0.2f, Volume = 0.5f};
             Item.shootSpeed = 12f;
             
