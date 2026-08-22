@@ -13,6 +13,7 @@ namespace W.Content.Items.Weapons.Ranger
             Item.useTime = 2;
             Item.useAnimation = 2;
             Item.autoReuse = true;
+            Item.channel = true;
             Item.noMelee = true;
             Item.channel = true;
             Item.Size = new Vector2(48, 32);

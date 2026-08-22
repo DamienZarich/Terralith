@@ -27,12 +27,10 @@ namespace W.Content.Items.Weapons.Ranger
                 Projectile.Kill();
                 return;
             }
-
             Projectile.Center = player.Center;
             Vector2 aimDir = Vector2.Normalize(Main.MouseWorld - player.Center);
             Projectile.velocity = aimDir;
             Projectile.timeLeft = 2;
-
             player.ChangeDir(Projectile.direction);
             player.heldProj = Projectile.whoAmI;
             player.itemTime = 2;
