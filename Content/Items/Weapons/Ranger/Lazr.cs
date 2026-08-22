@@ -37,18 +37,13 @@ public class Lazr : ModProjectile
             player.itemTime = 2;
             player.itemAnimation = 2;
             player.itemRotation = (float)System.Math.Atan2(aimDir.Y * player.direction, aimDir.X * player.direction);
-        }
 
-        public override bool? Colliding(Rectangle projHitbox, Rectangle targetHitbox)
-{
-    float laserLength = Projectile.localAI[0];
-    Vector2 direction = Projectile.velocity.SafeNormalize(Vector2.Zero);
-    Vector2 startPos = Projectile.Center;
-    Vector2 endPos = startPos + Projectile.velocity * laserLength;
-    float maxDistance = 800f;
-    float currentDistance = 0f;
+            Vector2 startPos = Projectile.Center;
+            Vector2 direction = Projectile.velocity.SafeNormalize(Vector2.Zero);
+            float maxDistance = 800f;
+            float currentDistance = 0f;
 
-    while (currentDistance < maxDistance)
+            while (currentDistance < maxDistance)
             {
                 Vector2 checkPos = startPos + direction * currentDistance;
 
@@ -62,6 +57,14 @@ public class Lazr : ModProjectile
                 }
                 currentDistance += 16f;
             }
+        }
+
+        public override bool? Colliding(Rectangle projHitbox, Rectangle targetHitbox)
+{
+    float laserLength = Projectile.localAI[0];
+    Vector2 direction = Projectile.velocity.SafeNormalize(Vector2.Zero);
+    Vector2 startPos = Projectile.Center;
+    Vector2 endPos = startPos + Projectile.velocity * laserLength;
 
     float point = 0f;
     return Collision.CheckAABBvLineCollision(targetHitbox.TopLeft(), targetHitbox.Size(), startPos, endPos, 16f, ref point);
