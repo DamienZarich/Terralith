@@ -4,3 +4,5 @@ Items: {
 		DisplayName: Kuva Nukor
 	}
 }
+
+Projectiles.Lazr.DisplayName: Lazr

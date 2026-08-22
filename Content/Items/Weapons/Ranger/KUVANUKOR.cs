@@ -14,14 +14,15 @@ namespace W.Content.Items.Weapons.Ranger
             Item.useAnimation = 2;
             Item.autoReuse = true;
             Item.noMelee = true;
-            Item.Size = new Vector2(102, 66);
+            Item.channel = true;
+            Item.Size = new Vector2(48, 32);
             Item.DamageType = DamageClass.Ranged;
             Item.damage = 425;
             Item.knockBack = 2f;
             Item.material = true;
             Item.ArmorPenetration = 100;
 
-            Item.shoot = ProjectileID.HeatRay;
+            Item.shoot = ModContent.ProjectileType<Lazr>();
             Item.UseSound = SoundID.Item12 with { Pitch = 0.2f, Volume = 0.5f};
             Item.shootSpeed = 12f;
             
@@ -36,9 +37,7 @@ namespace W.Content.Items.Weapons.Ranger
             .AddIngredient(ItemID.ToxicFlask, 3)
             .AddIngredient(ItemID.HeatRay, 1)
             .AddTile(TileID.MythrilAnvil)
-            .Register();
-
-            
+            .Register(); 
         }
         public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {

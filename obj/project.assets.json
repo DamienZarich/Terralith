@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net8.0": {}
   },
@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Damien Zarich\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\W\\W.csproj",
+      "projectUniqueName": "C:\\Users\\Damien Zarich\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\W\\W.csproj",
       "projectName": "W",
-      "projectPath": "C:\\Users\\Damien Zarich\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\W\\W.csproj",
+      "projectPath": "C:\\Users\\Damien Zarich\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\W\\W.csproj",
       "packagesPath": "C:\\Users\\Damien Zarich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Damien Zarich\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\W\\obj\\",
+      "outputPath": "C:\\Users\\Damien Zarich\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\W\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Damien Zarich\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -30,6 +30,7 @@
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {}
         }
@@ -43,10 +44,12 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
+        "framework": "net8.0",
         "targetAlias": "net8.0",
         "imports": [
           "net461",
@@ -64,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.423/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
